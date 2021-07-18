@@ -103,6 +103,7 @@ class Cpt {
 			'description'         => 'Post Type Description',
 			'labels'              => $labels,
 			'supports'            => false,
+			'bp_activity'         => false,
 			'taxonomies'          => array( 'category', 'post_tag' ),
 			'hierarchical'        => false,
 			'public'              => true,

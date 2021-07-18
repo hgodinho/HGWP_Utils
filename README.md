@@ -36,6 +36,7 @@ Para iniciar a classe Cpt você precisa passar dois parâmetros `$args` (array) 
                     'description'         => 'Post Type Description',
                     'labels'              => $labels, // @see https://developer.wordpress.org/reference/functions/get_post_type_labels/ for a full list os labels
                     'supports'            => array(),
+                    'bp_activity'         => array(), // Support for BuddyPress activity and comments @see https://codex.buddypress.org/plugindev/post-types-activities/#2-add-comments-tracking-feature-during-the-post-type-registration
                     'taxonomies'          => array( 'category', 'post_tag' ),
                     'hierarchical'        => false,
                     'public'              => true,
@@ -106,6 +107,7 @@ Para iniciar a classe Tax você precisa passar dois parâmetros `$args` (array) 
 
 ***
 ## Changelog
+- `0.12.1` adiciona suporte para BuddPress Activity
 - `0.12` condicional $init na classe Tax, melhoria na dumentação
 - `0.11.9` remove condicional $init registra_post
 - `0.11.8` bug-fix na registra_post
