@@ -48,7 +48,7 @@ class Cpt {
 			}
 		}
 		if ( $init ) {
-			add_action( 'init', array( $this, 'registra_post' ), 10 );
+			add_action( 'after_setup_theme', array( $this, 'registra_post' ), 10 );
 		}
 	}
 

@@ -107,6 +107,7 @@ Para iniciar a classe Tax você precisa passar dois parâmetros `$args` (array) 
 
 ***
 ## Changelog
+- `0.12.3` muda o hook do cpt para after_setup_theme
 - `0.12.2` adiciona prioridade 10 para o init
 - `0.12.1` adiciona suporte para BuddPress Activity
 - `0.12` condicional $init na classe Tax, melhoria na dumentação
