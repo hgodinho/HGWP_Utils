@@ -109,13 +109,19 @@ class Extras {
 			$wp = 'muerto.';
 		} else {
 			$wp = 'vivito.';}
+		
+		$highlight_string =	highlight_string("<?php " . var_export($var, true) . "; ?>", true);
+
 		echo '<p><strong>Class: ' . $class . ' | ';
 		echo 'Method: ' . $method . ' | ';
 		echo 'Line: ' . $line . ' | ';
 		echo 'WordPress: ' . $wp;
 		echo '</strong></p>';
-		var_dump( $var );
-		echo '<p><strong>var_dump stop</strong></p>';
+		echo '<pre>';
+		var_dump( $highlight_string );
+		echo '</pre>';
+		echo '<p><strong>var_export stop</strong></p>';
+
 		if ( true === $die ) {
 			wp_die();
 		}

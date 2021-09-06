@@ -107,6 +107,7 @@ Para iniciar a classe Tax você precisa passar dois parâmetros `$args` (array) 
 
 ***
 ## Changelog
+- `0.14` melhoria na exibição EXTRAS::special_var_dump
 - `0.13` desfaz ação anterior
 - `0.12.3` muda o hook do cpt para after_setup_theme
 - `0.12.2` adiciona prioridade 10 para o init
