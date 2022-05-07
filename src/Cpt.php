@@ -49,6 +49,8 @@ class Cpt {
 		}
 		if ( $init ) {
 			add_action( 'init', array( $this, 'registra_post' ), 10 );
+		} else {
+			$this->registra_post();
 		}
 	}
 
