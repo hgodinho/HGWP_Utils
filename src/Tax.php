@@ -43,6 +43,8 @@ class Tax {
 		}
 		if ( $init ) {
 			add_action( 'init', array( $this, 'registra_taxonomia' ) );	
+		} else {
+			$this->registra_taxonomia();
 		}
 	}
 
